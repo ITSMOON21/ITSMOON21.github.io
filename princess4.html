@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Princess Dayang's Choice</title>
+</head>
+<body>
+    <img src="https://i.pinimg.com/originals/b9/b2/32/b9b232952b22a6dfcee8148f2650129b.gif" alt="Princess GIF" width="300" height="300">
+    <br>
+    <button onclick="showMessage('yes')">Yes</button>
+    <button onclick="showMessage('no')">No</button>
+
+    <div id="result"></div>
+
+    <script>
+        function showMessage(choice) {
+            var resultDiv = document.getElementById("result");
+
+            if (choice === 'yes') {
+                resultDiv.innerHTML = "I love you princess";
+                document.querySelector('img').src = "https://pin.it/3MHIiCu";
+            } else if (choice === 'no') {
+                resultDiv.innerHTML = "You have nowhere to go";
+                document.querySelector('img').src = "https://pin.it/Cti8zwv";
+            }
+        }
+    </script>
+</body>
+</html>
